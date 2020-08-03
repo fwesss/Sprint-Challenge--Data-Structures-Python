@@ -51,3 +51,12 @@ class LinkedList:
             current = next_node
 
         self.head = prev
+
+    def traverse(self):
+        values = []
+        current = self.head
+        while current is not None:
+            values.append(current.value)
+            current = current.next
+
+        print(values)
